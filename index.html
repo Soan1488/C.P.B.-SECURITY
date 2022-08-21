@@ -14,20 +14,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <a class="logo" href="./index.html" target="_self">
-            <img src="" alt="">
+    <header class="header">
+        <div class="container header_container">
+            <a class="header_logo" href="./index.html" target="_self">
+            <img src="./images/logo.jpg" alt="logotipe" width="80" height="80">
         </a>
         <ul class="social-list">
-            <li class="social-list_item"><a href=""></a></li>
-            <li class="social-list_item"><a href=""></a></li>
-            <li class="social-list_item"><a href="">Kontact</a></li>
+            <li class="social-list_item"><a href="">
+                <svg height="30" width="30">
+                    <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
+                </svg>
+            </a></li>
+            <li class="social-list_item"><a href="">
+                <svg height="30" width="30">
+                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+            </a></li>
         </ul>
+        <a class="header_contact-link" href="">Kontact</a>
         <nav class="nav">
             <ul class="nav_list">
                 <li class="nav_item"><a class="nav_link" href=""></a>O NAS</li>
@@ -39,6 +47,11 @@
                 <li class="nav_item"><a class="nav_link" href=""></a>KARIÉRA</li>
             </ul>   
         </nav>
+        <button class="mobile-menu-button">
+            <svg height="30" width="30">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+        </button>
         </div>
     </header>
     <!-- /Header -->

@@ -1,0 +1,24 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: var(--primary-background-color);
+    border-bottom: 1px solid var(--secondary-background-color);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-list {
+    display: none;
+}
+
+.header_contact-link {
+    display: none;
+}
+
+.nav_list {
+    display: none;
+}

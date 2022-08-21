@@ -94,10 +94,10 @@ body {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid var(--secondary-background-color);
+  border-bottom: 3px solid var(--secondary-background-color);
 }
 
 .header_container {
@@ -116,4 +116,13 @@ body {
 
 .nav_list {
   display: none;
+}
+
+.mobile-menu-button {
+  border: none;
+  background-color: var(--primary-background-color);
+}
+
+.mobile-menu-button_icon {
+  fill: var(--secondary-background-color);
 }/*# sourceMappingURL=main.css.map */

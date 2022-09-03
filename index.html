@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,42 +19,54 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header_container">
-        <a class="header_logo" href="./index.html" target="_self">
-          <img src="./images/logo.jpg" alt="logotipe" width="60" height="60" />
+      <div class="container header__container">
+        <div class="header__menu-field">
+            <a class="header__logo" href="./index.html" target="_self">
+                <picture>
+                    <source srcset="./images/logo.jpg 1x, ./images/logo_2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" width="110" height="110" >
+                    <source srcset="./images/logo.webp 1x, ./images/logo_2x.webp 2x" type="image/webp" media="(min-width: 1200px)" width="110" height="110" >
+                    <source srcset="./images/logo.webp 1x, ./images/logo_2x.webp 2x" type="image/webp" media="(min-width: 768px)" width="85" height="85" >
+                    <source srcset="./images/logo.jpg 1x, ./images/logo_2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" width="85" height="85" >
+                    <source srcset="./images/logo.webp 1x, ./images/logo_2x.webp 2x" type="image/webp" width="60" height="60">
+                    <source srcset="./images/logo.jpg 1x, ./images/logo_2x.jpg 2x" type="image/jpeg" width="60" height="60">
+                    <img src="./images/logo.jpg" alt="logotipe" width="60" height="60" />
+                </picture>
         </a>
-        <ul class="social-list">
-          <li class="social-list_item">
+        <div class="header__social-field">
+            <ul class="social-list">
+          <li class="social-list__item">
             <a href="">
-              <svg height="30" width="30">
+              <svg height="30" width="30" class="social-list__icon">
                 <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list_item">
+          <li class="social-list__item">
             <a href="">
-              <svg height="30" width="30">
+              <svg height="30" width="30" class="social-list__icon">
                 <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="header_contact-link" href="">Kontact</a>
+        <a class="header__contact-link" href="">KONTACT</a>
+        </div>
+        </div>
         <nav class="nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a class="nav_link" href=""></a>O NAS</li>
-            <li class="nav_item"><a class="nav_link" href=""></a>BEZPEČNOSTNÍ SLUŽBY</li>
-            <li class="nav_item">
-              <a class="nav_link" href=""></a>ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">O NAS</a></li>
+            <li class="nav__item"><a class="nav__link" href="">BEZPEČNOSTNÍ SLUŽBY</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</a>
             </li>
-            <li class="nav_item"><a class="nav_link" href=""></a>MONITORING OBJEKTŮ PCO</li>
-            <li class="nav_item"><a class="nav_link" href=""></a>ÚKLIDOVÉ SLUŽBY</li>
-            <li class="nav_item"><a class="nav_link" href=""></a>HOSTESKY</li>
-            <li class="nav_item"><a class="nav_link" href=""></a>KARIÉRA</li>
+            <li class="nav__item"><a class="nav__link" href="">MONITORING OBJEKTŮ PCO</a></li>
+            <li class="nav__item"><a class="nav__link" href="">ÚKLIDOVÉ SLUŽBY</a></li>
+            <li class="nav__item"><a class="nav__link" href="">HOSTESKY</a></li>
+            <li class="nav__item"><a class="nav__link" href="">KARIÉRA</a></li>
           </ul>
         </nav>
         <button class="mobile-menu-button" type="button" data-menu-open>
-          <svg class="mobile-menu-button_icon" height="30" width="30">
+          <svg class="mobile-menu-button__icon" height="30" width="30">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
@@ -110,11 +122,28 @@
                 </a>
               </li>
             </ul>
-          </ul>
         </div>
       </div>
     </div>
-    <!-- Mobile menu -->
+    <!-- /Mobile menu -->
+    <!--Hero-->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">CHRÁNÍME VÁS A VÁŠ MAJETEK</h1>
+        <h2 class="hero__subtitle">C.P.B. SECURITY</h2>
+        <button class="hero__button" type="button">KONTAKTUJTE MĚ</button>
+        <p class="hero__text">Jsme licencovaná a vázaná bezpečnostní / uklidová společnost s vizí, 
+posláním a metodami pro poskytování našich služeb.
+Naším cílem je řešit nenaplněné bezpečnostní / uklidové potřeby 
+komerčních, rezidenčních, institucionálních a individuálních klientů .
+Jsme firma co pomáhá a dobrý partner .
+Používáme osvědčené strategie k navrhování spolehlivých 
+bezpečnostních 
+programů přizpůsobených potřebám konkrétních jednotlivců, skupin, 
+společností a/nebo míst. Sloužíme organizacím v celé řadě oblasti i 
+mimo ni.</p>
+      </div>
+    </section>
     <script src="./js/menu.js" type="module"></script>
   </body>
 </html>

@@ -19,7 +19,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/back_hero_mobilee@2x.jpg);
+            url(../images/back_hero_mobile_2x.jpg);
     }
     
     @media screen and (min-width: 768px) {
@@ -31,7 +31,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/back_hero_tablet@2x.jpg)
+            url(../images/back_hero_tablet@x2.jpg)
         }
         }
     

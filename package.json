@@ -1,0 +1,26 @@
+{
+  "name": "c.p.b.-security",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soan1488/C.P.B.-SECURITY.git"
+  },
+  "author": "Andrii Sokolovskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soan1488/C.P.B.-SECURITY/issues"
+  },
+  "homepage": "https://github.com/Soan1488/C.P.B.-SECURITY#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+  
+}

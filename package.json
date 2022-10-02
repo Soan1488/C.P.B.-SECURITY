@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://soan1488.github.io/C.P.B.-SECURITY/",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /C.P.B.-SECURITY/"
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/Soan1488/C.P.B.-SECURITY/issues"
   },
-  "homepage": "https://github.com/Soan1488/C.P.B.-SECURITY#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",

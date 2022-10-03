@@ -4,9 +4,9 @@
   "description": "",
   "homepage": "https://soan1488.github.io/C.P.B.-SECURITY/",
   "source": "src/index.html",
-  "scripts": {
+    "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url /C.P.B.-SECURITY/"
   },
   "repository": {
     "type": "git",

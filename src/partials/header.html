@@ -47,41 +47,55 @@
           <img src="../images/logo.jpg" alt="logotipe" width="60" height="60" />
         </picture>
       </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="">Domů</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#our_services">Naše Služby</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="">Kontakt</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Kariéra</a></li>
+        </ul>
+      </nav>
       <div class="header__social-field">
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="https://www.instagram.com/cpbsecurity/">
-              <svg height="30" width="30" class="social-list__icon">
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a class="contacts-list__link" href="mailto:info@devstudio.com" title="Send email">
+                  <svg class="contacts-list__icon" width="16" height="12">
+                    <use href="../images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  cpbsecurity@email.cz</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link" href="tel:+420603392943" title="Call">
+                  <svg class="contacts-list__icon" width="10" height="16">
+                    <use href="../images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +420 603392943</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="social-list__item">
+            <a href="https://www.instagram.com/cpbsecurity/" target="_blank">
+              <svg height="25" width="25" class="social-list__icon">
                 <use href="../images/symbol-defs.svg#icon-instagram-1"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="">
-              <svg height="30" width="30" class="social-list__icon">
+            <a href="https://www.facebook.com/profile.php?id=100084510293669" target="_blank">
+              <svg height="25" width="25" class="social-list__icon">
                 <use href="../images/symbol-defs.svg#icon-facebook-1"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="header__contact-link" href="">KONTACT</a>
       </div>
     </div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="">O NAS</a></li>
-        <li class="nav__item">
-          <a class="nav__link" href="#security_services">BEZPEČNOSTNÍ SLUŽBY</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="">ZABEZPEČOVACÍ A KAMEROVÉ SYSTÉMY</a>
-        </li>
-        <li class="nav__item"><a class="nav__link" href="">MONITORING OBJEKTŮ PCO</a></li>
-        <li class="nav__item"><a class="nav__link" href="">ÚKLIDOVÉ SLUŽBY</a></li>
-        <li class="nav__item"><a class="nav__link" href="">HOSTESKY</a></li>
-        <li class="nav__item"><a class="nav__link" href="">KARIÉRA</a></li>
-      </ul>
-    </nav>
     <button class="mobile-menu-button" type="button" data-menu-open>
       <svg class="mobile-menu-button__icon" height="30" width="30">
         <use href="../images/symbol-defs.svg#icon-menu"></use>

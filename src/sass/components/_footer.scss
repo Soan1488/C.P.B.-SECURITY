@@ -5,10 +5,6 @@
   border-top: 3px solid var(--secondary-background-color);
 }
 
-.address {
-  font-style: normal;
-}
-
 .address-list__item {
   display: flex;
   &:not(:last-child) {

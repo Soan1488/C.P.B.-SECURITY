@@ -30,11 +30,26 @@
   margin-bottom: 5px;
 }
 
+@keyframes fly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .header__logo {
-  margin-right: 90px;
+  animation-name: fly;
+  animation-duration: 2s;
+  @media screen and (min-width: 768px) {
+    margin-right: 90px;
+  }
 }
 
 .social-list {
+  animation-name: fly;
+  animation-duration: 2s;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -48,6 +63,8 @@
 }
 
 .nav__list {
+  animation-name: fly;
+  animation-duration: 2s;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -55,6 +72,8 @@
 }
 
 .mobile-menu-button {
+  animation-name: fly;
+  animation-duration: 2s;
   border: none;
   background-color: var(--primary-background-color);
   @media screen and (min-width: 768px) {

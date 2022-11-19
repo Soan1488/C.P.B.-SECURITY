@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  @media screen and (min-width: 768px) {
+    height: 250px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 350px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  color: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--thirty-background-color);
+}

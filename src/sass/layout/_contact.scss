@@ -17,19 +17,17 @@
 }
 
 .contact-info__item {
+  display: flex;
+  align-items: baseline;
   &:not(:last-child) {
     margin-bottom: 15px;
   }
 }
 
-.contact-info__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-list__icon {
   fill: var(--secondary-background-color);
   margin-bottom: 15px;
+  margin-right: 25px;
 }
 
 .google-wrapper {

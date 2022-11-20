@@ -1,0 +1,27 @@
+.career__wrapper {
+  height: 250px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/back-join-our-team.jpg);
+  background-position: center;
+  background-color: var(--primary-background-color);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/back-join-our-team.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 350px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/back-join-our-team.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/back-join-our-team.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 450px;
+  }
+}

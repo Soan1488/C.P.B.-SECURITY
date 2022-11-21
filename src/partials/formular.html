@@ -1,0 +1,67 @@
+<div class="backdrop__formular is-hidden">
+  <div class="modal" data-menuf>
+    <button type="button" class="modal__close" data-menu-closef>
+      <svg class="modal__icon" width="18" height="18">
+        <use href="../images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="contact-form">
+      <p class="contact-form__title">Zajem o prace</p>
+      <label class="contact-form__label">
+        <span class="contact-form__text">Jméno a Přijmení</span>
+        <span class="contact-form__block">
+          <input
+            type="text"
+            class="contact-form__input"
+            name="user-name"
+            required
+            autofocus
+            placeholder="Martin Luther"
+          />
+        </span>
+      </label>
+      <label class="contact-form__label"
+        ><span class="contact-form__text">Telefon</span>
+        <span class="contact-form__block"
+          ><input
+            type="tel"
+            class="contact-form__input"
+            name="user-tel"
+            required
+            placeholder="+420 ___ ___ ___"
+          />
+        </span>
+      </label>
+      <label class="contact-form__label">
+        <span class="contact-form__text">Email</span>
+        <span class="contact-form__block"
+          ><input
+            type="email"
+            class="contact-form__input"
+            name="email"
+            required
+            placeholder="Email"
+          />
+        </span>
+      </label>
+      <label class="contact-form__label">
+        <span class="contact-form__text">O jaku pozice mate zajem?</span>
+        <span class="contact-form__block"
+          ><input type="text" class="contact-form__input" name="profession" required />
+        </span>
+      </label>
+      <label class="contact-form__label">
+        <span class="contact-form__text">Localita vykonu prace</span>
+        <span class="contact-form__block"
+          ><input type="text" class="contact-form__input" name="location" />
+        </span>
+      </label>
+      <label class="contact-form__label last">
+        <span class="contact-form__text">Vaše zpráva (optional)</span>
+        <textarea class="contact-form__message" name="user-message" placeholder="Začnete psat">
+        </textarea>
+      </label>
+      <button type="submit" class="contact-form__button">Odeslat</button>
+    </form>
+  </div>
+</div>

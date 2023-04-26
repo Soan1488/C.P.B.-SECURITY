@@ -1,0 +1,18 @@
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin text($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin input($width, $height, $border) {
+  width: $width;
+  height: $height;
+  border-radius: $border;
+  outline: none;
+}

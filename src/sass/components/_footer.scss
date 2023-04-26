@@ -20,28 +20,6 @@
   }
 }
 
-.address-list__link {
-  color: var(--thirdty-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.footer-contact {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-  @media screen and (max-width: 1199px) {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-}
-
 .footer-container {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -56,13 +34,12 @@
 .footer-button {
   text-align: center;
   margin-bottom: 60px;
+  transition: background-color var(--transition);
 }
 
 .join__title {
-  color: var(--thirdty-text-color);
-  font-size: 22px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  @include text(500, 22px, 1.71, 0.03em);
   text-align: center;
   margin-bottom: 20px;
 }

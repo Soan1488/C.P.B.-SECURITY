@@ -1,8 +1,8 @@
 .modal {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   max-height: auto;
   width: 100%;
   max-width: 450px;
@@ -33,7 +33,7 @@
 }
 
 .modal__icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
   .modal__close:hover &,
   .modal__close:focus & {
     fill: var(--accent-color);

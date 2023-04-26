@@ -1,10 +1,18 @@
 :root {
   --primary-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
+
   --primary-text-color: #edf3bc;
   --secondary-text-color: #1b1b15;
   --accent-color: #815b07;
+  --input-text-color: rgba(117, 117, 117, 0.5);
+
   --primary-background-color: #000000;
   --secondary-background-color: #999900;
   --thirty-background-color: #ffffff;
+  --svg-color: #edf3bc;
+  --border-color-input: 1px solid rgba(33, 33, 33, 0.2);
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

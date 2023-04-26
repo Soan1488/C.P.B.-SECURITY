@@ -3,6 +3,7 @@
 @import './base/section';
 
 @import './utils/variables';
+@import './utils//mixins';
 
 @import './components/header';
 @import './components/mobile-menu';
@@ -15,6 +16,6 @@
 @import './layout/hero';
 @import './layout/our_services.scss';
 @import './layout/contact';
-@import './layout/security_services';
 @import './layout/career';
 @import './components/swiper.scss';
+@import './components/details';

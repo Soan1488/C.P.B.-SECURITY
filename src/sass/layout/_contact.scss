@@ -18,7 +18,7 @@
 
 .contact-info__item {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
   &:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -26,8 +26,7 @@
 
 .contact-list__icon {
   fill: var(--secondary-background-color);
-  margin-bottom: 15px;
-  margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .google-wrapper {
@@ -39,5 +38,21 @@
   @media screen and (min-width: 768px) {
     height: 375px;
     width: 750px;
+  }
+}
+
+.contact-list__text {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.contact-list__link {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  @include text(400, 16px, 1.18, 0.03em);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }

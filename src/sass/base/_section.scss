@@ -1,6 +1,7 @@
 .section {
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: var(--primary-background-color);
   @media screen and (min-width: 1200px) {
     padding-top: 40px;
     padding-bottom: 40px;

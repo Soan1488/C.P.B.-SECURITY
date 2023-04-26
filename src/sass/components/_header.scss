@@ -9,8 +9,7 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: block;
@@ -23,7 +22,7 @@
   &:focus {
     fill: var(--secondary-background-color);
   }
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 .header__menu-field {
   display: flex;
@@ -44,14 +43,11 @@
 }
 
 .social-list {
-  animation-name: fly;
-  animation-duration: 2s;
   display: none;
   @media screen and (min-width: 768px) {
-    display: flex;
+    @include flex-center;
     margin-bottom: 5px;
     justify-content: center;
-    align-items: center;
   }
 }
 .social-list__item:not(:last-child) {
@@ -59,8 +55,6 @@
 }
 
 .nav__list {
-  animation-name: fly;
-  animation-duration: 2s;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -68,8 +62,6 @@
 }
 
 .mobile-menu-button {
-  animation-name: fly;
-  animation-duration: 2s;
   border: none;
   background-color: var(--primary-background-color);
   @media screen and (min-width: 768px) {
@@ -77,9 +69,8 @@
   }
 }
 .nav__item {
-  display: flex;
+  @include flex-center;
   justify-content: center;
-  align-items: center;
   padding: 5px 5px;
   &:not(:last-child) {
     margin-right: 7px;
@@ -93,10 +84,7 @@
 .nav__link {
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
+  @include text(500, 15px, 1.18, 0.02em);
   text-align: center;
 
   &:hover,
@@ -104,13 +92,8 @@
     color: var(--accent-color);
   }
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 768px) {
-    font-weight: 500;
-    font-size: 14px;
-  }
+  transition: var(--transition);
   @media screen and (min-width: 1200px) {
-    font-weight: 500;
     font-size: 18px;
   }
 }
@@ -125,14 +108,11 @@
 
 .contacts-list__link {
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
   font-family: var(--primary-font-family);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  @include text(500, 15px, 1.18, 0.02em);
+  text-align: center;
+  @include flex-center;
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -140,8 +120,8 @@
 }
 .contacts-list__icon {
   margin-right: 8px;
-  fill: rgb(255, 255, 255);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--svg-color);
+  transition: fill var(--transition);
 
   .contacts-list__link:hover &,
   .contacts-list__link:focus & {
@@ -153,9 +133,8 @@
 }
 @media screen and (min-width: 1200px) {
   .contacts-list {
-    display: flex;
+    @include flex-center;
     margin-left: auto;
-    align-items: center;
   }
 }
 .contacts-list__item {

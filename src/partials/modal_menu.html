@@ -11,7 +11,7 @@
       <label class="contact-form__label">
         <span class="contact-form__text">Jméno</span>
         <span class="contact-form__block">
-          <input type="text" class="contact-form__input" name="user-name" required autofocus />
+          <input type="text" class="contact-form__input" name="name" required autofocus />
           <svg class="contact-form__icon" height="18" width="18">
             <use href="../images/symbol-defs.svg#icon-person-black"></use>
           </svg>
@@ -20,7 +20,7 @@
       <label class="contact-form__label"
         ><span class="contact-form__text">Telefon</span>
         <span class="contact-form__block"
-          ><input type="tel" class="contact-form__input" name="user-tel" required />
+          ><input type="tel" class="contact-form__input" name="tel" required />
           <svg class="contact-form__icon" height="18" width="18">
             <use href="../images/symbol-defs.svg#icon-phone-black"></use>
           </svg>
@@ -37,9 +37,14 @@
       </label>
       <label class="contact-form__label last">
         <span class="contact-form__text">Vaše zpráva (optional)</span>
-        <textarea class="contact-form__message" name="user-message" placeholder="Začnete psat">
+        <textarea class="contact-form__message" name="message" placeholder="Začnete psat">
         </textarea>
       </label>
+      <a
+        class="contact-form__text"
+        href="https://www.freeprivacypolicy.com/live/22bafdef-3d9b-4d12-be00-0a6b86ddcebe"
+        >Stisknutim souhlasíte se zpracováním osobních údajů</a
+      >
       <button type="submit" class="contact-form__button">Odeslat</button>
     </form>
   </div>

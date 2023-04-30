@@ -23,9 +23,11 @@ function onListClick(e) {
     case 'cleaning':
       refs.backdrop = document.querySelector('.cleaning__backdrop');
       refs.closeBtn = document.querySelector('[data="cleaningDetails"]');
+      break;
     case 'hostess':
       refs.backdrop = document.querySelector('.hostess__backdrop');
       refs.closeBtn = document.querySelector('[data="hostessDetails"]');
+      break;
     default:
       break;
   }

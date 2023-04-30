@@ -47,6 +47,20 @@ function onBtnClose(e) {
 
 function onSubmitBtnClick(e) {
   e.preventDefault();
+  const name = e.currentTarget.elements.name.value;
+  const tel = e.currentTarget.elements.tel.value;
+  const email = e.currentTarget.elements.email.value;
+  const message = e.currentTarget.elements.message.value;
+  if (name.trim(' ') === '' || tel.trim(' ') === '') {
+    return alert("Field name or phone can't be empty ");
+  }
+  Email.send({
+    SecureToken: '24438714-087a-4e7c-ab75-9e631196de15',
+    To: 'cpbsecurity@email.cz',
+    From: 'cpb@europe.com',
+    Subject: 'This is email from your website',
+    Body: `Please contact me. My name: ${name}, phone: ${tel}, email: ${email}, message: ${message}.`,
+  }).then(message => alert(message));
   refs.form.reset();
   onBtnClose();
   removeListeners();

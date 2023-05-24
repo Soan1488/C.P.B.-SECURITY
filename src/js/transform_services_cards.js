@@ -7,30 +7,25 @@ const refs = {
 refs.list.addEventListener('click', onListClick);
 
 function onListClick(e) {
-  switch (e.target.getAttribute('data')) {
-    case 'guard':
-      refs.backdrop = document.querySelector('.guard__backdrop');
-      refs.closeBtn = document.querySelector('[data="guardDetails"]');
-      break;
-    case 'camera':
-      refs.backdrop = document.querySelector('.camera__backdrop');
-      refs.closeBtn = document.querySelector('[data="cameraDetails"]');
-      break;
-    case 'monitoring':
-      refs.backdrop = document.querySelector('.monitoring__backdrop');
-      refs.closeBtn = document.querySelector('[data="monitoringDetails"]');
-      break;
-    case 'cleaning':
-      refs.backdrop = document.querySelector('.cleaning__backdrop');
-      refs.closeBtn = document.querySelector('[data="cleaningDetails"]');
-      break;
-    case 'hostess':
-      refs.backdrop = document.querySelector('.hostess__backdrop');
-      refs.closeBtn = document.querySelector('[data="hostessDetails"]');
-      break;
-    default:
-      break;
+  if (e.target.classList.contains('guard')) {
+    refs.backdrop = document.querySelector('.guard__backdrop');
+    refs.closeBtn = document.querySelector('.guard__details');
+  } else if (e.target.classList.contains('camera')) {
+    refs.backdrop = document.querySelector('.camera__backdrop');
+    refs.closeBtn = document.querySelector('.camera__details');
+  } else if (e.target.classList.contains('monitoring')) {
+    refs.backdrop = document.querySelector('.monitoring__backdrop');
+    refs.closeBtn = document.querySelector('.monitoring__details');
+  } else if (e.target.classList.contains('cleaning')) {
+    refs.backdrop = document.querySelector('.cleaning__backdrop');
+    refs.closeBtn = document.querySelector('.cleaning__details');
+  } else if (e.target.classList.contains('hostess')) {
+    refs.backdrop = document.querySelector('.hostess__backdrop');
+    refs.closeBtn = document.querySelector('.hostess__details');
+  } else {
+    return;
   }
+
   refs.backdrop.classList.remove('is-hidden');
   document.addEventListener('keydown', onEscTap);
   refs.backdrop.addEventListener('click', onClickOutside);
